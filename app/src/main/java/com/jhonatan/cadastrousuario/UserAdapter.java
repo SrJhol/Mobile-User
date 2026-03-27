@@ -25,11 +25,11 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
      View view = LayoutInflater.from(parent.getContext()).inflate(android.R.layout.simple_list_item_1, parent, false);
 
      //Retorna uma nova instancia da nossa classe interna ViewHolder com a View criada
-     return new RecyclerView.ViewHolder(view);}
+     return new ViewHolder(view);}
 
       //Metedo 2:Vincula os dados de um ojeto de lista a uma linha especifica da tela
  @Override
-public void onBindViewHolder (@NonNull RecyclerView.ViewHolder holder, int position) {
+public void onBindViewHolder (@NonNull ViewHolder holder, int position) {
  //  Recupera os dados da lista de acordo com a posição que o Android está desenhando agora
   String nome = listaUsuarios.get(position);
 
