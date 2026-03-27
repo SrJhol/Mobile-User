@@ -51,9 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Mapeia o botão de cadastro
         btnCadastrar = findViewById(R.id.button);
-        btnCadastrar.setOnClickListener(v -> {
-            startActivities(new Intent(MainActivity.this, CreateUser.class));
-        });
+        btnCadastrar.setOnClickListener(v-> startActivity(new Intent(MainActivity.this, CreateUser.class)));
     }
     //Método chamado sempre que a tela volta a ficar visivel para o usuario
     @Override
